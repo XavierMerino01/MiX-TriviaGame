@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 
 [System.Serializable]
@@ -29,7 +28,8 @@ public class TrivialManager : MonoBehaviour
 
     [Header("Puzzle Info")]
     public GameState triviaState;
-    [SerializeField] public int currentQuestion = 0;
+    public int minRightAnswers;
+    private int currentQuestion = 0;
     private float questionDuration = 10;
     [HideInInspector] public int correctAnswers;
 
@@ -75,21 +75,14 @@ public class TrivialManager : MonoBehaviour
         SFXManager.Instance.PlaySound("Puzzle_Done");
 
         triviaState = GameState.Complete;
-        Question.text = "SUUUU! Has encertat "+ correctAnswers+"/10";
+        Question.text = "Your score is: "+ correctAnswers+"/"+ (trivialQuestions.Length - 2);
         answerA.text = "";
         answerB.text = "";
         answerC.text = "";
 
-        if (correctAnswers > 3)
+        if (correctAnswers > minRightAnswers)
         {
-            if (correctAnswers < 7)
-            {
-                GameManager.Instance.SpawnPrizeHearts(correctAnswers);
-            }
-            else
-            {
-                GameManager.Instance.SpawnPrizeHearts(7);
-            }
+            GameManager.Instance.SpawnPrizeHearts(correctAnswers);
         }
         exitTp.triggerType = GameTrigger.EventType.Teleport;
         Instantiate(exitPortal, exitPortalTransform);
@@ -130,7 +123,7 @@ public class TrivialManager : MonoBehaviour
         SFXManager.Instance.PlaySound("OKAnswer");
         correctAnswers += 1;
 
-        Question.text = "Correcte!";
+        Question.text = "Correct!";
         answerA.text = "" ;
         answerB.text = "";
         answerC.text = "";
@@ -152,7 +145,7 @@ public class TrivialManager : MonoBehaviour
 
         SFXManager.Instance.PlaySound("WrongAnswer");
 
-        Question.text = "CAGAAASTE";
+        Question.text = "Wrong";
         answerA.text = "";
         answerB.text = "";
         answerC.text = "";

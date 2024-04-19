@@ -6,35 +6,35 @@ public class FurnitureCompletionPuzzle : MonoBehaviour
 {
     LivingRoomPuzzle puzzleManager;
 
-    public enum TypeOfFurniture
-    {
-        None,
-        Sofa,
-        Picture,
-        Table
-    }
-
-    public TypeOfFurniture typeOfFurniture;
     public FurnitureObject.TypeOfObject targetObject;
 
-    public GameObject[] children;
+    protected GameObject[] children;
+
+    protected int childIndex;
 
     private void Start()
     {
         puzzleManager = GetComponentInParent<LivingRoomPuzzle>();
+
+        children = new GameObject[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            children[i] = transform.GetChild(i).gameObject;
+        }
     }
 
-    private void OnTriggerEnter(Collider other)
+    protected virtual void OnTriggerEnter(Collider other)
     {
         if (other.GetComponent<FurnitureObject>())
         {
             FurnitureObject thisObj = other.GetComponent<FurnitureObject>();
 
-            if (thisObj.typeOfObject == targetObject) 
+            if (thisObj.typeOfFurniture == targetObject) 
             {
                 SFXManager.Instance.PlaySound("DropItem");
 
-                children[other.GetComponent<FurnitureObject>().indexOfObject].SetActive(true);
+                children[childIndex].SetActive(true);
+                childIndex++;
                 GameManager.Instance.RemovePlayerObject();
                 Destroy(other.gameObject);
 
@@ -44,7 +44,7 @@ public class FurnitureCompletionPuzzle : MonoBehaviour
         }
     }
 
-    private void CheckCompletion()
+    protected virtual void CheckCompletion()
     {
         for (int i = 0; i < children.Length; i++)
         {
@@ -54,6 +54,6 @@ public class FurnitureCompletionPuzzle : MonoBehaviour
             }
         }
         GameManager.Instance.LobbySpawnHeart();
-        puzzleManager.SetPuzzleState(typeOfFurniture.ToString(), true);
+        puzzleManager.SetPuzzleState(targetObject.ToString(), true);
     }
 }

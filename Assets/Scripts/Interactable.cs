@@ -10,5 +10,10 @@ public class Interactable : MonoBehaviour
         PickUp,
         Button
     }
-    public Type objectType;
+    public Type interactableType;
+
+    public Interactable(Type type)
+    {
+        interactableType = type;
+    }
 }

@@ -32,7 +32,7 @@ Transform:
   - {fileID: 2343004704908012496}
   - {fileID: 3453697323438845149}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6694223078003313885
 BoxCollider:
@@ -150,7 +150,6 @@ GameObject:
   - component: {fileID: 3453697323438845149}
   - component: {fileID: 7470114969092839897}
   - component: {fileID: 7225693417378283551}
-  - component: {fileID: 1686918929216748053}
   - component: {fileID: 9049091928172123297}
   - component: {fileID: 4657886567459533108}
   - component: {fileID: 8017133201113977076}
@@ -227,19 +226,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1686918929216748053
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3313612998177748332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28bb2e20636792b419ae42f036df2fe7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectType: 2
 --- !u!114 &9049091928172123297
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,10 +238,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 183b8c9ddc243124a82a1f970cf9b7a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectType: 0
   buttonType: 1
-  teleportDestination: {fileID: 0}
-  levelNum: 0
+  targetDoor: {fileID: 0}
   optionValue: 0
+  lightIndicator: {fileID: 0}
 --- !u!65 &4657886567459533108
 BoxCollider:
   m_ObjectHideFlags: 0

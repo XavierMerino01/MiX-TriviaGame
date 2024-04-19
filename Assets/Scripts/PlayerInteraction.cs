@@ -42,7 +42,7 @@ public class PlayerInteraction : MonoBehaviour
 
         Interactable currentObject = interactDetect.objectInRange.GetComponent<Interactable>();
 
-        switch (currentObject.objectType)
+        switch (currentObject.interactableType)
         {
             case (Interactable.Type.PickUp):
                 PickUpObject(currentObject.gameObject);

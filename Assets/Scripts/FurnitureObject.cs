@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FurnitureObject : MonoBehaviour
+public class FurnitureObject : Interactable
 {
+    public FurnitureObject() : base(Type.PickUp)
+    {
+
+    }
+
     public enum TypeOfObject
     {
         None,
-        Book,
-        Pillow,
+        Table,
+        Sofa,
         Picture
     }
-    public TypeOfObject typeOfObject;
-
-    public int indexOfObject;
+    public TypeOfObject typeOfFurniture;
 }

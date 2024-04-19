@@ -14,7 +14,7 @@ public class HeartCounter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (!other.CompareTag("Heart")) return;
+        if (!other.CompareTag("Diamond")) return;
 
         AddAndUpdateHearts();
         Instantiate(colectionEffect, other.transform.position, Quaternion.identity);

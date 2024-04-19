@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 413514393683633755}
   - component: {fileID: 4389831236969917017}
   m_Layer: 3
-  m_Name: BlueHeart_pickUp
-  m_TagString: Heart
+  m_Name: BlueDiamond_pickUp
+  m_TagString: Diamond
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,12 +31,12 @@ Transform:
   m_GameObject: {fileID: 7771934934584202000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.81, y: 2.5, z: 0.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1746927746449378496}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1666906179514519854
 MeshFilter:
@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7771934934584202000}
-  m_Mesh: {fileID: -5007211661080579465, guid: a894d0ae84df29b40b73cf58f21531c4, type: 3}
+  m_Mesh: {fileID: 7707654557581586362, guid: f681d17aa72a9ff4c8a3d0807b25bc3f, type: 3}
 --- !u!23 &3926300363420001720
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28bb2e20636792b419ae42f036df2fe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectType: 1
+  interactableType: 1
 --- !u!136 &413514393683633755
 CapsuleCollider:
   m_ObjectHideFlags: 0
