@@ -18,9 +18,10 @@ public class MainMenuManager : MonoBehaviour
 
     void Start()
     {
-        videoPlayer = GetComponent<VideoPlayer>();
-        videoPlayer.loopPointReached += OnVideoEnd;
-        Invoke("DelayedFade", 2);
+        //videoPlayer = GetComponent<VideoPlayer>();
+        //videoPlayer.loopPointReached += OnVideoEnd;
+        //Invoke("DelayedFade", 2);
+        DelayedFade();
     }
 
     void OnVideoEnd(VideoPlayer vp)

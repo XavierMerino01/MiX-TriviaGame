@@ -56,7 +56,7 @@ public class MoviePostersManager : MonoBehaviour
         SFXManager.Instance.PlaySound("Puzzle_Done");
 
         BroadcastMessage("DeactivateHighlight");
-        buttonText.text = "Has acabat!";
+        buttonText.text = "Game Finished!";
         gameState = GameState.Complete;
         GameManager.Instance.SpawnPrizeHearts(correctGuessCount - 1);
         exitTp.triggerType = GameTrigger.EventType.Teleport;

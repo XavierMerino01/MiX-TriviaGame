@@ -143,4 +143,8 @@ public class GameManager : MonoBehaviour
         playerRef.GetComponent<PlayerScript>().ChangePlayerState(PlayerScript.PlayerState.Dancing);
     }
 
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
 }

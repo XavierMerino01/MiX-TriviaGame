@@ -5871,6 +5871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 578938431}
   - component: {fileID: 578938432}
+  - component: {fileID: 578938433}
   m_Layer: 5
   m_Name: EndGamePanel
   m_TagString: Untagged
@@ -5892,6 +5893,7 @@ RectTransform:
   m_Children:
   - {fileID: 857993939}
   - {fileID: 1743712546}
+  - {fileID: 1934554649}
   m_Father: {fileID: 519146625}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5921,6 +5923,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &578938433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578938430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9c9a994cf712f14aa029c57f25e9a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &585921434
 GameObject:
   m_ObjectHideFlags: 0
@@ -9101,7 +9115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Thanks for playing! \nHope you enjoyed!"
+  m_text: "Thanks for playing! \nHope you enjoyed"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 48ef2defa57b72b45a16fd731ad594e8, type: 2}
   m_sharedMaterial: {fileID: -8843656933732669006, guid: 48ef2defa57b72b45a16fd731ad594e8, type: 2}
@@ -9828,7 +9842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &887538900
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13383,11 +13397,41 @@ MonoBehaviour:
     answerC: Yuri Gagarin
     questionSolution: 0
     questionAudio: {fileID: 0}
+  - questionFrase: Which instrument is being played?
+    answerA: Violin
+    answerB: Piano
+    answerC: Guitar
+    questionSolution: 0
+    questionAudio: {fileID: 8300000, guid: 033ac91087095d741b614aa96bf6bedb, type: 3}
   - questionFrase: Which river is the longest in the world?
     answerA: Sena
     answerB: Amazon
     answerC: Nile
     questionSolution: 2
+    questionAudio: {fileID: 0}
+  - questionFrase: What animal does this sound belong to?
+    answerA: Frog
+    answerB: Bird
+    answerC: Cat
+    questionSolution: 2
+    questionAudio: {fileID: 8300000, guid: 029d051a6ce87bb438a4f0ac20f5ea31, type: 3}
+  - questionFrase: What is the highest grossing film of all time?
+    answerA: Avatar
+    answerB: 'Avengers: Endgame'
+    answerC: Titanic
+    questionSolution: 1
+    questionAudio: {fileID: 0}
+  - questionFrase: Which artist performs this games music?
+    answerA: Ed Sheeran
+    answerB: Taylor Swift
+    answerC: Harry Styles
+    questionSolution: 2
+    questionAudio: {fileID: 0}
+  - questionFrase: Who played Jack Sparrow?
+    answerA: Johnny Deep
+    answerB: Leonardo DiCaprio
+    answerC: Tom Cruise
+    questionSolution: 0
     questionAudio: {fileID: 0}
   triviaState: 0
   minRightAnswers: 0
@@ -18426,7 +18470,7 @@ GameObject:
   - component: {fileID: 1743712548}
   - component: {fileID: 1743712547}
   m_Layer: 5
-  m_Name: Final
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18472,7 +18516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2365201c4dd6a084c958eae300215460, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 029ccec532955d04fb3f35f3a4111bfa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20364,6 +20408,82 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.960196, y: 0.99995726, z: 0.16504326}
   m_Center: {x: -0.00018191338, y: 0.49999878, z: -0.000000052154064}
+--- !u!1 &1934554648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1934554649}
+  - component: {fileID: 1934554651}
+  - component: {fileID: 1934554650}
+  m_Layer: 5
+  m_Name: 'Final '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1934554649
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934554648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 578938431}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1934554650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934554648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0cd21bada64bd9b44adf1888470fab95, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1934554651
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934554648}
+  m_CullTransparentMesh: 1
 --- !u!4 &1943231475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2418272823099110879, guid: 7a8332363c17e6f4a95abcee405c3083, type: 3}
@@ -22594,6 +22714,10 @@ PrefabInstance:
       propertyPath: soundEffects.Array.size
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1145873540101709446, guid: 88e7de869af2eca4899520eb91829c5e, type: 3}
+      propertyPath: soundEffects.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: c5cb2ac29e89dbf43a9b644caaad45e6, type: 3}
     - target: {fileID: 1145873540101709446, guid: 88e7de869af2eca4899520eb91829c5e, type: 3}
       propertyPath: soundEffects.Array.data[7].clip
       value: 
