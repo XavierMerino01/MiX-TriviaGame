@@ -31,3 +31,9 @@ Utilized state management techniques, such as coroutines and enum-based state ma
 
 #### Audio Integration
 Created an audio system to play the diferent necessary FX and to also play the musical pieces when needed for the puzzles.
+
+## Adaptation
+
+As mentioned, the first purpose of the project was personal, but upon deciding to expand and polish it for portfolio usage.
+The decision to remove personal data was almost mandatory and it included having to change and adapt some of the functionalities.
+Here are some of the changes that deserve a mention:
