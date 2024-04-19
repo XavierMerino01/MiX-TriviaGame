@@ -1,6 +1,11 @@
-## About The Project
+#MiX Game
 
-The main purpose of this game was to use it as an anniversary present for my girlfriend. 
-I developed it in a couple weeks and tried to keep it simple, but made the effort to write a decent and reusable code. 
-The goal of the game is to colect as many blue diamonds as posible and get rewards for them, to then use those to complete another part of the game. 
-To get diamonds the player needs to complete a couple of Trivia-like games and a "complete the room" puzzle, in which he has to find and place the correct items into the corresponding furniture object.
+##About The Project
+This project originated as an anniversary present for my girlfriend, and also using the opportunity as a chance to showcase my game development skills. Over the course of two weeks, I dedicated myself to creating a game that balanced simplicity with quality code architecture.
+
+After the first personal version was finished, I took some more time to refine and optimize the game, with the goal of finally including it in my professional portfolio.
+
+##Gameplay
+The game starts giving players the option to choose between three characters in the Main Menu: a duck, a bear, and a dog, created by KayLousberg and available for use on itch.io. 
+
+The objective of the game is to collect as many blue diamonds as possible, unlocking rewards along the way. To acquire diamonds, players must engage in a series of challenges, including trivia-style games and a "complete the room" puzzles. 
