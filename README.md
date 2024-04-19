@@ -2,7 +2,7 @@
 
 ## About The Project
 
-This project originated as an anniversary present for my girlfriend, and also using the opportunity as a chance to showcase my game development skills. Over the course of two weeks, I dedicated myself to creating a game that balanced simplicity with quality code architecture.
+This project originated as an anniversary present for my girlfriend, and using the opportunity to showcase my game development skills. Over the course of two weeks, I dedicated myself to creating a game that balanced simplicity with quality code architecture.
 
 After the first personal version was finished, I took some more time to refine and optimize the game, with the goal of finally including it in my professional portfolio.
 
