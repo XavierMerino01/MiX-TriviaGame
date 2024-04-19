@@ -9,7 +9,7 @@ After the first personal version was finished, I took some more time to refine a
 ## Gameplay
 The game starts giving players the option to choose between three characters in the Main Menu: a duck, a bear, and a dog, created by KayLousberg and available for use on itch.io. 
 
-The objective of the game is to collect as many blue diamonds as possible, unlocking rewards along the way. To acquire diamonds, players must engage in a series of challenges, including trivia-style games and a "complete the room" puzzles. 
+The objective of the game is to collect as many blue diamonds as possible, unlocking rewards along the way. To acquire diamonds, players must engage in a series of challenges, including trivia-style games and a "complete the room" puzzle. 
 
 ## Code Overview 
 The development of the code was key, so I focused on creating a cohesive and efficient codebase to support the implementation of various gameplay features. Below is an overview of the key aspects of the code architecture and design principles utilized throughout the project.
@@ -34,6 +34,5 @@ Created an audio system to play the diferent necessary FX and to also play the m
 
 ## Adaptation
 
-As mentioned, the first purpose of the project was personal, but upon deciding to expand and polish it for portfolio usage.
-The decision to remove personal data was almost mandatory and it included having to change and adapt some of the functionalities.
+As mentioned, the first purpose of the project was personal, but upon deciding to expand and polish it for portfolio usage the decision to remove personal data was almost mandatory and it included having to change and adapt some of the functionalities.
 Here are some of the changes that deserve a mention:
