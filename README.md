@@ -29,10 +29,7 @@ Implemented simple but engaging puzzle mechanics, including the furniture comple
 #### State Management
 Utilized state management techniques, such as coroutines and enum-based state machines, to orchestrate game events and manage the progression of gameplay elements with precision and efficiency.
 
-#### Audio Integration
-Created an audio system to play the diferent necessary FX and to also play the musical pieces when needed for the puzzles.
+#### Audio and Effects
+Created an audio and VFX system to play the diferent necessary cues and to also play the musical pieces when needed for the puzzles. 
 
-## Adaptation
 
-As mentioned, the first purpose of the project was personal, but upon deciding to expand and polish it for portfolio usage the decision to remove personal data was almost mandatory and it included having to change and adapt some of the functionalities.
-Here are some of the changes that deserve a mention:
