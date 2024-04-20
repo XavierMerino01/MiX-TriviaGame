@@ -4,6 +4,8 @@
 
 This project originated as an anniversary present for my girlfriend, and using the opportunity to showcase my game development skills. Over the course of two weeks, I dedicated myself to creating a game that balanced simplicity with quality code architecture.
 
+I also need to mention i was deeply and clearly inspired by the charming aesthetic and fluid movement of Overcooked 2. It was a goal to try and recreate those elements in Unity by myself.
+
 After the first personal version was finished, I took some more time to refine and optimize the game, with the goal of finally including it in my professional portfolio.
 
 ## Gameplay
