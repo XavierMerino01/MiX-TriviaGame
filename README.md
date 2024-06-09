@@ -9,7 +9,7 @@ I also need to mention i was deeply and clearly inspired by the charming aesthet
 After the first personal version was finished, I took some more time to refine and optimize the game, with the goal of finally including it in my professional portfolio.
 
 <div style="text-align: center;">
-    <img src="https://github.com/XavierMerino01/MiX-TriviaGame/assets/71768212/d1fb81ff-da98-4486-8538-f9ba69012740" alt="Captura5" width="450">
+    <img src="https://github.com/XavierMerino01/MiX-TriviaGame/assets/71768212/d1fb81ff-da98-4486-8538-f9ba69012740" alt="Captura5" width="600">
 </div>
 
 ## Gameplay
@@ -47,5 +47,21 @@ Utilized state management techniques, such as coroutines and enum-based state ma
 
 #### Audio and Effects
 Created an audio and VFX system to play the diferent necessary cues and to also play the musical pieces when needed for the puzzles. 
+
+## Credits
+As mentioned in the introduction the aesthetic, movement and grab/release mechanic was inspired by Overcooked 2
+
+## Credits
+
+#### Assets
+The assets used in this project were created by Kay Lousberg. You can find the packaged i used and more by this amazing creator here:
+- [Kay Lousberg](https://www.kaylousberg.com/game-assets)
+
+#### Music
+The music tracks used in the introduction and in the game were obtained from YouTube. You can listen to the tracks on the following link:
+- [Intro - La Gent Que Estimo "Karaoke" by Oques Grasses](https://www.youtube.com/watch?v=Qa25ihimhvU)
+- [In Game Music - Harry Styles 8 bit tribute](https://www.youtube.com/@8BitUniverse)
+
+As mentioned in the introduction, this projects aesthetic, movement control and picking mechanics were inspired by Overcooked2.
 
 
