@@ -49,9 +49,6 @@ Utilized state management techniques, such as coroutines and enum-based state ma
 Created an audio and VFX system to play the diferent necessary cues and to also play the musical pieces when needed for the puzzles. 
 
 ## Credits
-As mentioned in the introduction the aesthetic, movement and grab/release mechanic was inspired by Overcooked 2
-
-## Credits
 
 #### Assets
 The assets used in this project were created by Kay Lousberg. You can find the packaged i used and more by this amazing creator here:
