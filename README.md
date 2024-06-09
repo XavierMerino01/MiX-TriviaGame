@@ -51,11 +51,11 @@ Created an audio and VFX system to play the diferent necessary cues and to also 
 ## Credits
 
 #### Assets
-The assets used in this project were created by Kay Lousberg. You can find the packaged i used and more by this amazing creator here:
+The assets used in this project were created by Kay Lousberg. You can find the packaged I used, and more by this amazing creator, here:
 - [Kay Lousberg](https://www.kaylousberg.com/game-assets)
 
 #### Music
-The music tracks used in the introduction and in the game were obtained from YouTube. You can listen to the tracks on the following link:
+The music tracks used in the introduction and in the game were obtained from YouTube. You can listen to the tracks on the following links:
 - [Intro - La Gent Que Estimo "Karaoke" by Oques Grasses](https://www.youtube.com/watch?v=Qa25ihimhvU)
 - [In Game Music - Harry Styles 8 bit tribute](https://www.youtube.com/@8BitUniverse)
 
